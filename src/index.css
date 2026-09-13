@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0A0A;
+  color: #E4E4E4;
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::selection {
+  background: rgba(0, 255, 65, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border: 1px solid rgba(0, 255, 65, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 65, 0.2);
+}
+
+/* Global noise texture overlay */
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+/* Focus ring - Matrix green */
+:focus-visible {
+  outline: 2px solid #00FF41;
+  outline-offset: 2px;
+}
+
+/* Buttons with sliding fill layer */
+.btn-slide {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.3s ease;
+}
+.btn-slide:hover {
+  transform: scale(1.03);
+}
+.btn-slide .btn-slide-layer {
+  position: absolute;
+  inset: 0;
+  transform: translateX(-101%);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+.btn-slide:hover .btn-slide-layer {
+  transform: translateX(0);
+}
+.btn-slide > span {
+  position: relative;
+  z-index: 1;
+}
+
+.link-hover {
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
+}
+.link-hover:hover {
+  transform: translateY(-1px);
+}
+
+.card-hover {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 255, 65, 0.08);
+}
+
+.terminal-border {
+  border: 1px solid rgba(0, 255, 65, 0.15);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 255, 65, 0.35);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(0, 255, 65, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.font-mono-heading {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.blink-cursor::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+  color: #00FF41;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+input, textarea, select {
+  background-color: #050505;
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  color: #E4E4E4;
+  font-family: 'Fira Code', monospace;
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(228, 228, 228, 0.35);
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #00FF41;
+  box-shadow: 0 0 0 3px rgba(0, 255, 65, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
