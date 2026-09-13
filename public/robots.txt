@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://promptlab.vercel.app/sitemap.xml
+Sitemap: https://gratuitas-de-ia-y-productividad.vercel.app/sitemap.xml
