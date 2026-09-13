@@ -1,10 +1,8 @@
-import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import NoiseOverlay from './components/NoiseOverlay'
-import { ADSENSE_PUBLISHER_ID, isAdsenseConfigured } from './lib/adsenseConfig'
 
 import Home from './pages/Home'
 import ToolsPage from './pages/ToolsPage'
@@ -23,18 +21,6 @@ import Changelog from './pages/Changelog'
 import NotFound from './pages/NotFound'
 
 export default function App() {
-  useEffect(() => {
-    if (!isAdsenseConfigured()) return
-    if (document.querySelector('script[data-adsbygoogle-loader]')) return
-
-    const script = document.createElement('script')
-    script.async = true
-    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`
-    script.crossOrigin = 'anonymous'
-    script.dataset.adsbygoogleLoader = 'true'
-    document.head.appendChild(script)
-  }, [])
-
   return (
     <div className="min-h-screen bg-terminal-black">
       <NoiseOverlay />
