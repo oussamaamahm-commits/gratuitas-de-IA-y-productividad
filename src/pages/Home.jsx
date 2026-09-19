@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Herramientas de IA y Productividad Gratis"
         description="Herramientas gratuitas de IA para escribir, resumir, organizar, planificar y trabajar más rápido."
         path="/"
       />

@@ -28,7 +28,7 @@ export default function BlogPostPage() {
             <span>{article.readingTime}</span>
             <span>·</span>
             <time dateTime={article.date}>
-              {new Date(article.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}
+              {new Date(article.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}
             </time>
           </div>
 
