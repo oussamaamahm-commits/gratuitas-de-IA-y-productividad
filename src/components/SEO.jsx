@@ -1,7 +1,7 @@
 // React 19 hoists <title>, <meta>, and <link> tags rendered anywhere in the
 // tree into <head> automatically, so no head-management library is needed.
 
-const SITE_URL = 'https://gratuitas-de-ia-y-productividad.vercel.app'
+const SITE_URL = 'https://quickmotionai.com'
 const DEFAULT_IMAGE = `${SITE_URL}/favicon.svg`
 
 export default function SEO({ title, description, path = '/', image = DEFAULT_IMAGE, type = 'website' }) {

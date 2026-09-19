@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gratuitas-de-ia-y-productividad.vercel.app/sitemap.xml
+Sitemap: https://quickmotionai.com/sitemap.xml

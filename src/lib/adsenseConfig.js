@@ -7,7 +7,7 @@
 // below — until those are set, AdSlot renders nothing in production and a
 // dev-only placeholder in local development.
 
-export const ADSENSE_PUBLISHER_ID = import.meta.env.VITE_ADSENSE_PUBLISHER_ID || 'ca-pub-7739352195047028'
+export const ADSENSE_PUBLISHER_ID = import.meta.env.VITE_ADSENSE_PUBLISHER_ID || 'ca-pub-6401594372758258'
 
 export const ADSENSE_SLOTS = {
   banner: import.meta.env.VITE_ADSENSE_SLOT_BANNER || '',
