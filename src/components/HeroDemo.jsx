@@ -88,7 +88,7 @@ export default function HeroDemo() {
               <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
             </div>
             <div className="flex-1 text-center text-[11px] text-white/30 font-code truncate">
-              promptlab.app / workspace
+              quickmotionai.com / workspace
             </div>
           </div>
 

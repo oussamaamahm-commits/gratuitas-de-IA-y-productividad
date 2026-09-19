@@ -4,11 +4,11 @@ import LegalLayout from './LegalLayout'
 export default function CookiesPolicy() {
   return (
     <>
-      <SEO title="Política de cookies" description="Política de cookies de PromptLab." path="/legal/cookies" />
+      <SEO title="Política de cookies" description="Política de cookies de QuickMotionAI." path="/legal/cookies" />
       <LegalLayout title="Política de cookies" updated="13 de septiembre de 2026">
         <p>
           Una cookie es un pequeño archivo que se almacena en tu navegador al visitar una página web. Esta
-          política explica qué tipos de cookies puede utilizar PromptLab y con qué finalidad.
+          política explica qué tipos de cookies puede utilizar QuickMotionAI y con qué finalidad.
         </p>
 
         <h2>Cookies técnicas</h2>

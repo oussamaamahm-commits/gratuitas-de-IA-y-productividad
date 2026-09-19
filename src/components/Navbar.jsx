@@ -75,7 +75,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-2 shrink-0 group" onClick={() => setMenuOpen(false)}>
             <Terminal size={18} className="text-matrix" aria-hidden="true" />
             <span className="font-mono-heading font-bold text-sm md:text-base tracking-tight text-white">
-              PromptLab
+              QuickMotionAI
             </span>
           </Link>
 

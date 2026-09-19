@@ -5,18 +5,18 @@ export default function About() {
   return (
     <>
       <SEO
-        title="Sobre PromptLab"
-        description="PromptLab es un sistema de herramientas gratuitas de IA y productividad para escribir, organizar y trabajar más rápido."
+        title="Sobre QuickMotionAI"
+        description="QuickMotionAI es un sistema de herramientas gratuitas de IA y productividad para escribir, organizar y trabajar más rápido."
         path="/about"
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">
         <div className="max-w-2xl mx-auto">
           <div className="text-[11px] tracking-widest text-matrix mb-3">[ ABOUT ]</div>
-          <h1 className="font-mono-heading font-bold text-3xl md:text-4xl text-white mb-6">Sobre PromptLab</h1>
+          <h1 className="font-mono-heading font-bold text-3xl md:text-4xl text-white mb-6">Sobre QuickMotionAI</h1>
 
           <div className="space-y-5 text-sm md:text-base text-white/60 leading-relaxed">
             <p>
-              PromptLab nace de una idea simple: la mayoría de las tareas diarias de escritura, organización y
+              QuickMotionAI nace de una idea simple: la mayoría de las tareas diarias de escritura, organización y
               planificación se repiten una y otra vez, y gran parte de ese trabajo se puede acelerar con las
               herramientas adecuadas.
             </p>

@@ -4,10 +4,10 @@ import LegalLayout from './LegalLayout'
 export default function PrivacyPolicy() {
   return (
     <>
-      <SEO title="Política de privacidad" description="Política de privacidad de PromptLab." path="/legal/privacidad" />
+      <SEO title="Política de privacidad" description="Política de privacidad de QuickMotionAI." path="/legal/privacidad" />
       <LegalLayout title="Política de privacidad" updated="13 de septiembre de 2026">
         <p>
-          En PromptLab nos tomamos en serio la privacidad de quienes usan nuestras herramientas. Esta política
+          En QuickMotionAI nos tomamos en serio la privacidad de quienes usan nuestras herramientas. Esta política
           explica qué información se procesa, con qué finalidad y qué derechos tiene el usuario.
         </p>
 

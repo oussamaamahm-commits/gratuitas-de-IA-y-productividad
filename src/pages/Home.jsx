@@ -19,7 +19,7 @@ export default function Home() {
         description="Herramientas gratuitas de IA para escribir, resumir, organizar, planificar y trabajar más rápido."
         path="/"
       />
-      <h1 className="sr-only">PromptLab — Herramientas de IA y Productividad Gratis</h1>
+      <h1 className="sr-only">QuickMotionAI — Herramientas de IA y Productividad Gratis</h1>
       <HeroDemo />
       <ToolGrid />
       <TelemetryFeed />

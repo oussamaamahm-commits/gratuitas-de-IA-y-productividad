@@ -47,7 +47,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Terminal size={18} className="text-matrix" />
-              <span className="font-mono-heading font-bold text-white">PromptLab</span>
+              <span className="font-mono-heading font-bold text-white">QuickMotionAI</span>
             </div>
             <p className="text-xs text-white/40 leading-relaxed max-w-xs">
               AI Productivity System. Menos tareas. Más resultados.
@@ -77,7 +77,7 @@ export default function Footer() {
             </span>
             <span className="text-matrix/70 tracking-widest">SYSTEM ACTIVE · v1.0</span>
           </div>
-          <span>© {new Date().getFullYear()} PromptLab. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} QuickMotionAI. Todos los derechos reservados.</span>
         </div>
       </div>
     </footer>

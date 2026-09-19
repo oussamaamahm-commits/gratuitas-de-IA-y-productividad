@@ -5,7 +5,7 @@ const SITE_URL = 'https://quickmotionai.com'
 const DEFAULT_IMAGE = `${SITE_URL}/favicon.svg`
 
 export default function SEO({ title, description, path = '/', image = DEFAULT_IMAGE, type = 'website' }) {
-  const fullTitle = title ? `${title} — PromptLab` : 'PromptLab — Herramientas de IA y Productividad Gratis'
+  const fullTitle = title ? `${title} — QuickMotionAI` : 'QuickMotionAI — Herramientas de IA y Productividad Gratis'
   const url = `${SITE_URL}${path}`
 
   return (

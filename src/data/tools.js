@@ -10,7 +10,7 @@ export const tools = [
     howItWorks: [
       { title: 'Pega tu texto', description: 'Introduce el borrador que quieres mejorar, por corto o largo que sea.' },
       { title: 'Elige tono y objetivo', description: 'Selecciona cómo quieres que suene y para qué contexto se usará.' },
-      { title: 'Recibe la versión mejorada', description: 'PromptLab reestructura frases, ajusta el tono y elimina relleno.' },
+      { title: 'Recibe la versión mejorada', description: 'QuickMotionAI reestructura frases, ajusta el tono y elimina relleno.' },
     ],
     useCases: [
       'Adaptar un email informal a un tono profesional.',
@@ -104,7 +104,7 @@ export const tools = [
     ],
     faq: [
       { q: '¿Puedo editar el resultado?', a: 'Sí, el texto generado es un punto de partida editable, no un envío automático.' },
-      { q: '¿Envía el email por mí?', a: 'No. PromptLab nunca envía comunicaciones en tu nombre; solo genera el contenido.' },
+      { q: '¿Envía el email por mí?', a: 'No. QuickMotionAI nunca envía comunicaciones en tu nombre; solo genera el contenido.' },
     ],
   },
   {

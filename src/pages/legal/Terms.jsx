@@ -4,16 +4,16 @@ import LegalLayout from './LegalLayout'
 export default function Terms() {
   return (
     <>
-      <SEO title="Términos de uso" description="Términos de uso de PromptLab." path="/legal/terminos" />
+      <SEO title="Términos de uso" description="Términos de uso de QuickMotionAI." path="/legal/terminos" />
       <LegalLayout title="Términos de uso" updated="13 de septiembre de 2026">
         <p>
-          Estos términos regulan el uso de las herramientas y contenidos disponibles en PromptLab. Al utilizar la
+          Estos términos regulan el uso de las herramientas y contenidos disponibles en QuickMotionAI. Al utilizar la
           Plataforma, aceptas estos términos en su totalidad.
         </p>
 
         <h2>Uso de las herramientas</h2>
         <p>
-          Las herramientas de PromptLab son de uso gratuito y no requieren registro. Puedes utilizarlas para
+          Las herramientas de QuickMotionAI son de uso gratuito y no requieren registro. Puedes utilizarlas para
           fines personales y profesionales, siempre dentro de la legalidad vigente.
         </p>
 
@@ -34,7 +34,7 @@ export default function Terms() {
 
         <h2>Disponibilidad del servicio</h2>
         <p>
-          PromptLab se esfuerza por mantener la Plataforma disponible y en buen funcionamiento, pero no garantiza
+          QuickMotionAI se esfuerza por mantener la Plataforma disponible y en buen funcionamiento, pero no garantiza
           un acceso ininterrumpido. Las herramientas y funcionalidades pueden modificarse, añadirse o retirarse
           en cualquier momento.
         </p>

@@ -8,7 +8,7 @@ export default function ToolsPage() {
     <>
       <SEO
         title="Todas las herramientas"
-        description="Explora el catálogo completo de herramientas gratuitas de IA de PromptLab: escritura, resúmenes, prompts, planificación y más."
+        description="Explora el catálogo completo de herramientas gratuitas de IA de QuickMotionAI: escritura, resúmenes, prompts, planificación y más."
         path="/tools"
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">

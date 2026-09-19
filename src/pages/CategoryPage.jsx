@@ -18,7 +18,7 @@ export default function CategoryPage() {
     <>
       <SEO
         title={`Herramientas de ${category.label}`}
-        description={`${category.longDescription} Explora las herramientas gratuitas de IA de PromptLab en la categoría ${category.label}.`}
+        description={`${category.longDescription} Explora las herramientas gratuitas de IA de QuickMotionAI en la categoría ${category.label}.`}
         path={`/categories/${category.slug}`}
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">

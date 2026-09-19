@@ -4,17 +4,17 @@ import LegalLayout from './LegalLayout'
 export default function LegalNotice() {
   return (
     <>
-      <SEO title="Aviso legal" description="Aviso legal de PromptLab." path="/legal/aviso-legal" />
+      <SEO title="Aviso legal" description="Aviso legal de QuickMotionAI." path="/legal/aviso-legal" />
       <LegalLayout title="Aviso legal" updated="13 de septiembre de 2026">
         <p>
-          Este aviso legal regula el acceso y uso del sitio web PromptLab (en adelante, "la Plataforma"), un
+          Este aviso legal regula el acceso y uso del sitio web QuickMotionAI (en adelante, "la Plataforma"), un
           proyecto que ofrece herramientas gratuitas de inteligencia artificial y productividad accesibles desde
           el navegador.
         </p>
 
         <h2>Identificación del titular</h2>
         <p>
-          PromptLab es un proyecto en desarrollo. La información de identificación fiscal y de contacto formal se
+          QuickMotionAI es un proyecto en desarrollo. La información de identificación fiscal y de contacto formal se
           actualizará en este apartado en cuanto el proyecto disponga de una entidad registrada.
         </p>
 
@@ -36,13 +36,13 @@ export default function LegalNotice() {
         <h2>Propiedad intelectual</h2>
         <p>
           El diseño, la estructura, el código y los contenidos originales de la Plataforma son propiedad de
-          PromptLab, salvo que se indique lo contrario. Los resultados generados a partir del uso de las
+          QuickMotionAI, salvo que se indique lo contrario. Los resultados generados a partir del uso de las
           herramientas pertenecen al usuario que los genera.
         </p>
 
         <h2>Exclusión de responsabilidad</h2>
         <p>
-          Las herramientas de la Plataforma pueden generar resultados que requieran revisión humana. PromptLab no
+          Las herramientas de la Plataforma pueden generar resultados que requieran revisión humana. QuickMotionAI no
           garantiza la exactitud, integridad o idoneidad de los resultados generados para un fin concreto, y no
           se responsabiliza del uso que el usuario haga de ellos.
         </p>

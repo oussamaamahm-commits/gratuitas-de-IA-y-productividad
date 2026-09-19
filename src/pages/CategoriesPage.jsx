@@ -7,7 +7,7 @@ export default function CategoriesPage() {
     <>
       <SEO
         title="Categorías"
-        description="Explora las herramientas de PromptLab organizadas por categoría: escritura, productividad, estudio, negocio, IA y automatización."
+        description="Explora las herramientas de QuickMotionAI organizadas por categoría: escritura, productividad, estudio, negocio, IA y automatización."
         path="/categories"
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">

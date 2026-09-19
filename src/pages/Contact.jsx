@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contacto"
-        description="Ponte en contacto con el equipo de PromptLab."
+        description="Ponte en contacto con el equipo de QuickMotionAI."
         path="/contact"
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">
@@ -19,13 +19,13 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:hello@promptlab.app"
+            href="mailto:hello@quickmotionai.com"
             className="btn-slide inline-flex items-center gap-2 rounded-sm border border-matrix/40 px-5 py-3 text-sm text-matrix"
           >
             <span className="btn-slide-layer bg-matrix/10" />
             <span className="flex items-center gap-2">
               <Mail size={15} />
-              hello@promptlab.app
+              hello@quickmotionai.com
             </span>
           </a>
         </div>

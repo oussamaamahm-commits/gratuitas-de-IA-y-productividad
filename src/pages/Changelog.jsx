@@ -5,7 +5,7 @@ const ENTRIES = [
     version: 'v1.0',
     date: '13 de septiembre de 2026',
     changes: [
-      'Lanzamiento inicial de PromptLab con 8 herramientas gratuitas.',
+      'Lanzamiento inicial de QuickMotionAI con 8 herramientas gratuitas.',
       'Sección de recursos con guías sobre IA y productividad.',
       'Arquitectura preparada para Google AdSense y monetización futura.',
     ],
@@ -15,7 +15,7 @@ const ENTRIES = [
 export default function Changelog() {
   return (
     <>
-      <SEO title="Changelog" description="Historial de cambios y novedades de PromptLab." path="/changelog" />
+      <SEO title="Changelog" description="Historial de cambios y novedades de QuickMotionAI." path="/changelog" />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">
         <div className="max-w-2xl mx-auto">
           <div className="text-[11px] tracking-widest text-matrix mb-3">[ CHANGELOG ]</div>
