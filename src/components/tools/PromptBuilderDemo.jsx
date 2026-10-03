@@ -63,11 +63,11 @@ export default function PromptBuilderDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <form onSubmit={handleGenerate} className="rounded-sm border border-white/10 bg-terminal-gray/40 p-5">
-        <Field label="DESCRIBE LO QUE QUIERES CONSEGUIR" htmlFor="pb-desc">
+        <Field label="¿QUÉ QUIERES QUE HAGA LA IA?" htmlFor="pb-desc">
           <textarea
             id="pb-desc"
             className={`${inputClass} min-h-[100px] resize-y`}
-            placeholder="Ej: Necesito un prompt para generar descripciones de producto para una tienda online de decoración..."
+            placeholder="Ej: Escribir descripciones de producto para una tienda online de decoración, de unas 80 palabras cada una..."
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             maxLength={600}

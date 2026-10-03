@@ -23,6 +23,7 @@ const routes = [
   '/about',
   '/contact',
   '/changelog',
+  '/editorial',
   '/legal/aviso-legal',
   '/legal/privacidad',
   '/legal/cookies',
@@ -64,4 +65,35 @@ for (const route of routes) {
   fs.writeFileSync(target, page)
 }
 
-console.log(`Prerendered ${routes.length} routes`)
+const SITE_URL = 'https://quickmotionai.com'
+const today = new Date().toISOString().slice(0, 10)
+const articleDates = Object.fromEntries(resources.map((r) => [`/blog/${r.slug}`, r.date]))
+
+function meta(route) {
+  if (route === '/') return ['weekly', '1.0']
+  if (route === '/tools' || route === '/blog') return ['weekly', '0.9']
+  if (route.startsWith('/tools/')) return ['monthly', '0.8']
+  if (route.startsWith('/blog/')) return ['monthly', '0.7']
+  if (route.startsWith('/categories')) return ['weekly', '0.6']
+  if (route.startsWith('/legal/')) return ['yearly', '0.3']
+  return ['monthly', '0.4']
+}
+
+const urls = routes
+  .map((route) => {
+    const [freq, priority] = meta(route)
+    const lastmod = articleDates[route] || today
+    return `  <url><loc>${SITE_URL}${route === '/' ? '/' : route}</loc><lastmod>${lastmod}</lastmod><changefreq>${freq}</changefreq><priority>${priority}</priority></url>`
+  })
+  .join('\n')
+
+fs.writeFileSync(
+  path.join(distDir, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>
+`,
+)
+
+console.log(`Prerendered ${routes.length} routes and generated sitemap.xml`)

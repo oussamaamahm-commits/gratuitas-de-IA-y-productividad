@@ -5,32 +5,32 @@ import ToolOutputCard from './ToolOutputCard'
 
 const TONES = ['Formal', 'Cercano', 'Directo']
 
-function buildEmail(reason, recipient, tone) {
-  const who = recipient.trim() || 'nombre del destinatario'
+export function buildEmail(reason, recipient, tone) {
+  const name = recipient.trim()
+  const trimmed = reason.trim().replace(/[.\s]+$/, '')
+  const cleaned = trimmed.charAt(0).toLowerCase() + trimmed.slice(1)
+  const subjectText = trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+  const subject = `Asunto: ${subjectText.length > 70 ? subjectText.slice(0, 67) + '…' : subjectText}`
 
   const greetings = {
-    Formal: `Estimado/a ${who}:`,
-    Cercano: `Hola ${who},`,
-    Directo: `${who},`,
+    Formal: name ? `Estimado/a ${name}:` : 'Buenos días:',
+    Cercano: name ? `Hola ${name},` : 'Hola:',
+    Directo: name ? `${name},` : '',
   }
 
-  const openings = {
-    Formal: 'Le escribo en relación a',
-    Cercano: 'Te escribo porque',
-    Directo: 'Asunto:',
+  const bodies = {
+    Formal: `Le escribo para ${cleaned}.`,
+    Cercano: `Te escribo para ${cleaned}.`,
+    Directo: `Quería ${cleaned}.`,
   }
 
   const closings = {
     Formal: 'Quedo a su disposición para cualquier aclaración.\n\nAtentamente,',
-    Cercano: 'Cualquier cosa que necesites, aquí estoy.\n\n¡Un saludo!',
-    Directo: 'Avísame si necesitas algo más.',
+    Cercano: 'Cualquier cosa que necesites, dímelo.\n\nUn saludo,',
+    Directo: 'Avísame si necesitas algo más.\n\nGracias,',
   }
 
-  const subject = `Asunto: ${reason.trim().slice(0, 70)}${reason.length > 70 ? '…' : ''}`
-
-  const body = `${greetings[tone]}\n\n${openings[tone]} ${reason.trim()}.\n\n${closings[tone]}`
-
-  return `${subject}\n\n${body}`
+  return [subject, greetings[tone], bodies[tone], closings[tone]].filter(Boolean).join('\n\n')
 }
 
 export default function EmailAssistantDemo() {
@@ -55,7 +55,7 @@ export default function EmailAssistantDemo() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <form onSubmit={handleGenerate} className="rounded-sm border border-white/10 bg-terminal-gray/40 p-5">
-        <Field label="MOTIVO DEL EMAIL" htmlFor="ea-reason">
+        <Field label="¿PARA QUÉ ESCRIBES? (empieza con un verbo en infinitivo)" htmlFor="ea-reason">
           <textarea
             id="ea-reason"
             className={`${inputClass} min-h-[90px] resize-y`}
@@ -93,7 +93,7 @@ export default function EmailAssistantDemo() {
         </button>
       </form>
 
-      <ToolOutputCard content={output} onReset={handleReset} emptyLabel="Describe el motivo del email para generar el borrador." />
+      <ToolOutputCard content={output} onReset={handleReset} emptyLabel="Indica para qué escribes y genera un borrador listo para editar." />
     </div>
   )
 }

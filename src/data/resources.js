@@ -1,389 +1,55 @@
-export const resources = [
-  {
-    slug: 'como-escribir-mejores-prompts',
-    title: 'Cómo escribir mejores prompts',
-    excerpt:
-      'La diferencia entre un resultado mediocre y uno útil casi siempre está en cómo formulas la petición. Estas son las reglas que marcan la diferencia.',
-    category: 'AI',
-    readingTime: '6 min',
-    date: '2026-01-12',
-    body: [
-      { type: 'p', content: 'Un prompt no es una pregunta cualquiera: es una instrucción. Cuanto más ambigua sea, más margen tiene la IA para interpretar mal lo que necesitas. La buena noticia es que escribir mejores prompts es una habilidad que se aprende con unas pocas reglas simples.' },
-      { type: 'h2', content: '1. Define el objetivo antes que el formato' },
-      { type: 'p', content: 'Antes de pensar en la longitud o el tono, define qué resultado necesitas. No es lo mismo pedir "un texto sobre marketing" que "un párrafo que explique el beneficio principal de un producto a un cliente que no conoce la marca".' },
-      { type: 'h2', content: '2. Aporta contexto, no solo la tarea' },
-      { type: 'p', content: 'La IA no conoce tu situación. Indica para quién es el resultado, en qué contexto se usará y qué restricciones existen (longitud, tono, formato). Ese contexto reduce drásticamente las respuestas genéricas.' },
-      { type: 'h2', content: '3. Especifica el tono explícitamente' },
-      { type: 'p', content: 'Palabras como "profesional", "cercano", "directo" o "técnico" cambian por completo el resultado. Si no lo especificas, el modelo elegirá un tono neutro que rara vez es el que necesitas.' },
-      { type: 'h2', content: '4. Pide un formato de salida concreto' },
-      { type: 'p', content: 'Si necesitas una lista, dilo. Si necesitas un párrafo corto, indica el número aproximado de palabras. Cuanto más concreta sea la estructura solicitada, menos trabajo de edición tendrás después.' },
-      { type: 'h2', content: '5. Itera en lugar de empezar de cero' },
-      { type: 'p', content: 'Si el primer resultado no es el adecuado, no reescribas todo el prompt: pide ajustes puntuales ("hazlo más breve", "usa un tono más directo"). Es más rápido refinar que empezar de nuevo.' },
-      { type: 'p', content: 'Herramientas como Prompt Builder existen precisamente para aplicar estas reglas de forma sistemática, sin tener que recordarlas cada vez que escribes una instrucción.' },
-    ],
-  },
-  {
-    slug: 'ia-sin-perder-productividad',
-    title: 'Cómo utilizar IA sin perder productividad',
-    excerpt:
-      'La IA promete ahorrar tiempo, pero mal utilizada puede generar el efecto contrario. Estas son las trampas más comunes y cómo evitarlas.',
-    category: 'Productividad',
-    readingTime: '5 min',
-    date: '2026-01-19',
-    body: [
-      { type: 'p', content: 'Usar IA no garantiza ganar tiempo. Si dedicas más minutos a corregir un resultado mediocre de los que hubieras tardado en hacerlo tú mismo, la herramienta se ha convertido en un obstáculo, no en una ayuda.' },
-      { type: 'h2', content: 'La trampa del "probar y ver qué sale"' },
-      { type: 'p', content: 'Lanzar peticiones vagas y esperar un buen resultado es la forma más común de perder tiempo con IA. Antes de escribir, dedica diez segundos a pensar qué necesitas exactamente.' },
-      { type: 'h2', content: 'Usa la IA para el primer borrador, no para la versión final' },
-      { type: 'p', content: 'La IA es especialmente útil para superar la página en blanco: generar una primera estructura, un borrador o una lista de ideas. La revisión y el criterio final siguen siendo tuyos.' },
-      { type: 'h2', content: 'Automatiza lo repetitivo, no lo importante' },
-      { type: 'p', content: 'Tareas como resumir, reformatear o generar plantillas son ideales para delegar. Las decisiones que requieren juicio o conocimiento profundo del contexto siguen necesitando tu criterio.' },
-      { type: 'h2', content: 'Mide el tiempo real, no la sensación de productividad' },
-      { type: 'p', content: 'Usar una herramienta nueva genera una sensación de avance que no siempre se corresponde con resultados reales. Compara el tiempo que tardabas antes con el que tardas ahora, no solo con lo que "parece" más eficiente.' },
-      { type: 'p', content: 'La clave no es usar más IA, sino usarla en el punto exacto del proceso donde realmente ahorra tiempo.' },
-    ],
-  },
-  {
-    slug: 'automatizar-tareas-repetitivas',
-    title: 'Cómo automatizar tareas repetitivas',
-    excerpt:
-      'No todo necesita automatización, pero identificar qué sí la necesita puede devolverte horas cada semana. Así se detecta y se resuelve.',
-    category: 'Automatización',
-    readingTime: '5 min',
-    date: '2026-01-26',
-    body: [
-      { type: 'p', content: 'Antes de automatizar algo, vale la pena preguntarse: ¿esta tarea se repite con la misma estructura cada vez? Si la respuesta es sí, probablemente sea candidata a automatización o, como mínimo, a una plantilla reutilizable.' },
-      { type: 'h2', content: 'Identifica los patrones antes de buscar herramientas' },
-      { type: 'p', content: 'Muchas tareas repetitivas comparten una estructura: mismo tipo de email, mismo formato de informe, mismos pasos de planificación. Detectar ese patrón es el primer paso, antes de pensar en qué herramienta usar.' },
-      { type: 'h2', content: 'De reunión a tareas, sin pasos intermedios' },
-      { type: 'p', content: 'Convertir notas de una reunión en una lista de tareas accionables es uno de los procesos manuales más comunes y también uno de los más fáciles de sistematizar con una herramienta que separe la información del compromiso.' },
-      { type: 'h2', content: 'Plantillas por encima de la repetición manual' },
-      { type: 'p', content: 'Si escribes el mismo tipo de email cada semana, no lo redactes desde cero cada vez. Define una estructura base y ajusta solo lo variable.' },
-      { type: 'h2', content: 'Automatizar no significa perder el control' },
-      { type: 'p', content: 'La automatización útil reduce el trabajo mecánico, pero mantiene la decisión final en tus manos. Desconfía de cualquier proceso que elimine por completo la revisión humana en tareas con impacto real.' },
-    ],
-  },
-  {
-    slug: 'resumir-documentos-con-ia',
-    title: 'Cómo resumir documentos con IA',
-    excerpt:
-      'Resumir bien no es acortar: es identificar qué información es realmente relevante. Así se hace de forma efectiva con ayuda de IA.',
-    category: 'Estudio',
-    readingTime: '4 min',
-    date: '2026-02-02',
-    body: [
-      { type: 'p', content: 'Un buen resumen no elimina palabras al azar: prioriza la información que realmente importa para el lector. Ese es el criterio que debe guiar cualquier proceso de resumen, manual o asistido por IA.' },
-      { type: 'h2', content: 'Define para qué necesitas el resumen' },
-      { type: 'p', content: 'Un resumen para decidir si leer un artículo completo es distinto de un resumen para citar en un informe. Antes de resumir, ten claro el uso que le darás.' },
-      { type: 'h2', content: 'Los textos bien estructurados se resumen mejor' },
-      { type: 'p', content: 'Los documentos organizados en párrafos claros, con una idea principal por párrafo, producen resúmenes más precisos que los textos densos sin estructura.' },
-      { type: 'h2', content: 'No sustituyas la lectura crítica' },
-      { type: 'p', content: 'Un resumen es un punto de partida, no una fuente definitiva. Para documentos importantes —contratos, informes técnicos, investigaciones— el resumen debe complementar la lectura completa, no reemplazarla.' },
-      { type: 'h2', content: 'Ajusta la longitud al contexto' },
-      { type: 'p', content: 'Un resumen de tres líneas sirve para decidir rápido; un resumen de un párrafo sirve para entender el contenido sin leer el original. Elige la longitud según lo que realmente necesitas.' },
-    ],
-  },
-  {
-    slug: 'organizar-tu-semana-con-ia',
-    title: 'Cómo utilizar IA para organizar tu semana',
-    excerpt:
-      'Planificar bien no es llenar un calendario, es priorizar correctamente. La IA puede ayudarte a estructurar objetivos, no solo a listar tareas.',
-    category: 'Productividad',
-    readingTime: '5 min',
-    date: '2026-02-09',
-    body: [
-      { type: 'p', content: 'La mayoría de los sistemas de planificación fallan porque generan listas de tareas sin priorización real. Una buena semana no es la que tiene más tareas completadas, sino la que avanza en lo que realmente importa.' },
-      { type: 'h2', content: 'Empieza por el objetivo, no por la tarea' },
-      { type: 'p', content: 'En lugar de escribir "responder emails", parte de un objetivo más amplio: "mantener la comunicación con clientes activos al día". De ahí se derivan las tareas concretas, no al revés.' },
-      { type: 'h2', content: 'Convierte objetivos difusos en pasos concretos' },
-      { type: 'p', content: 'Un objetivo como "avanzar en el proyecto" no es accionable. Una herramienta de planificación útil lo descompone en pasos verificables: qué se hace primero, qué depende de qué, y qué se puede posponer.' },
-      { type: 'h2', content: 'Revisa el plan, no solo la lista de tareas' },
-      { type: 'p', content: 'Al final de la semana, no te preguntes solo cuántas tareas completaste. Pregúntate si avanzaste en lo importante. Ajusta el plan de la semana siguiente con esa información.' },
-      { type: 'h2', content: 'Deja espacio para lo imprevisto' },
-      { type: 'p', content: 'Ningún plan sobrevive intacto a una semana real. Planifica con margen: si ocupas el 100% del tiempo disponible, cualquier imprevisto descompensa todo lo demás.' },
-    ],
-  },
-  {
-    slug: 'crear-workflows-de-ia',
-    title: 'Cómo crear workflows de IA',
-    excerpt:
-      'Un workflow de IA no es magia, es una secuencia clara de pasos con entradas y salidas definidas. Así se diseña uno que funcione de verdad.',
-    category: 'Automatización',
-    readingTime: '6 min',
-    date: '2026-02-16',
-    body: [
-      { type: 'p', content: 'Un workflow de IA útil empieza igual que cualquier proceso bien diseñado: con una entrada clara, unos pasos definidos y una salida concreta. La IA no sustituye ese diseño, lo ejecuta.' },
-      { type: 'h2', content: 'Mapea el proceso antes de automatizarlo' },
-      { type: 'p', content: 'Antes de pensar en herramientas, dibuja el proceso actual paso a paso. Identifica en qué punto exacto interviene la información, la decisión humana y la tarea repetitiva.' },
-      { type: 'h2', content: 'Combina herramientas pequeñas en lugar de buscar una única solución' },
-      { type: 'p', content: 'Los workflows más robustos suelen encadenar herramientas simples: un resumen, seguido de una extracción de tareas, seguido de un email de seguimiento. Cada pieza hace una cosa bien.' },
-      { type: 'h2', content: 'Define puntos de revisión humana' },
-      { type: 'p', content: 'No todo el workflow debe ser automático. Decide de antemano en qué pasos necesitas revisar el resultado antes de que avance al siguiente.' },
-      { type: 'h2', content: 'Empieza pequeño y mide el resultado' },
-      { type: 'p', content: 'Automatiza primero el proceso más repetitivo y de menor riesgo. Si funciona y ahorra tiempo real, amplía el workflow. Si no, ajusta antes de escalar.' },
-    ],
-  },
-  {
-    slug: 'email-que-consigue-respuesta',
-    title: 'Cómo escribir un email profesional que consiga respuesta',
-    excerpt:
-      'La mayoría de los emails profesionales se quedan sin respuesta no por el contenido, sino por cómo están estructurados. Esto es lo que marca la diferencia.',
-    category: 'Negocio',
-    readingTime: '5 min',
-    date: '2026-02-23',
-    body: [
-      { type: 'p', content: 'Un email bien escrito no es el más largo ni el más educado: es el que hace fácil para la otra persona entender qué le pides y responder rápido. La mayoría de los emails que se quedan sin respuesta fallan en eso, no en el tono.' },
-      { type: 'h2', content: 'El asunto decide si se abre o no' },
-      { type: 'p', content: 'Un asunto genérico como "Consulta" o "Reunión" compite con decenas de emails similares. Un asunto concreto ("Confirmación reunión jueves 10h" en vez de "Reunión") aumenta las probabilidades de que se abra primero.' },
-      { type: 'h2', content: 'Ve al grano en las dos primeras líneas' },
-      { type: 'p', content: 'La mayoría de las personas deciden si van a leer el resto del email en las dos primeras líneas. Empieza por el motivo, no por el saludo extendido o el contexto completo.' },
-      { type: 'h2', content: 'Pide una acción concreta, no una reflexión' },
-      { type: 'p', content: '"Avísame si te parece bien" genera menos respuestas que "¿Puedes confirmarme antes del viernes si el jueves a las 10h te viene bien?". Cuanto más concreta la petición, más fácil es responder en diez segundos.' },
-      { type: 'h2', content: 'El tono importa más que la longitud' },
-      { type: 'p', content: 'Un email corto y cordial suele funcionar mejor que uno largo y formal en exceso. Ajusta el tono al contexto real de la relación, no al que crees que "toca" usar.' },
-    ],
-  },
-  {
-    slug: 'cv-filtros-automaticos',
-    title: 'Cómo estructurar un CV que pase los filtros automáticos',
-    excerpt:
-      'Muchas empresas usan sistemas ATS que descartan CVs antes de que los vea una persona. Así se evita quedar fuera por errores de formato.',
-    category: 'Negocio',
-    readingTime: '6 min',
-    date: '2026-03-02',
-    body: [
-      { type: 'p', content: 'Antes de que un reclutador vea tu CV, muchas empresas lo pasan por un sistema ATS (Applicant Tracking System) que lo filtra automáticamente. Un CV con buen contenido puede quedar descartado simplemente por el formato.' },
-      { type: 'h2', content: 'Evita tablas, columnas e imágenes' },
-      { type: 'p', content: 'Los sistemas ATS leen el texto de forma lineal. Las tablas, columnas complejas o el texto dentro de imágenes suelen leerse mal o directamente no se leen, aunque visualmente el CV se vea perfecto.' },
-      { type: 'h2', content: 'Usa las palabras clave de la oferta' },
-      { type: 'p', content: 'Si la oferta menciona "gestión de proyectos" y tu CV dice "coordinación de equipos", el sistema puede no relacionarlo. Adapta el vocabulario de tu experiencia al de la oferta específica.' },
-      { type: 'h2', content: 'Prioriza títulos de sección estándar' },
-      { type: 'p', content: '"Experiencia", "Formación" y "Habilidades" se reconocen mejor que títulos creativos como "Mi trayectoria" o "Lo que sé hacer". La claridad gana a la originalidad en este punto concreto.' },
-      { type: 'h2', content: 'Guarda y envía en el formato correcto' },
-      { type: 'p', content: 'A menos que la oferta pida específicamente otro formato, un PDF con texto seleccionable (no una imagen escaneada) es la opción más segura para que el sistema lo procese bien.' },
-    ],
-  },
-  {
-    slug: 'prompts-para-marketing',
-    title: 'Prompts útiles para marketing y contenido',
-    excerpt:
-      'Escribir para marketing tiene reglas distintas a escribir en general. Estos prompts ayudan a generar contenido con un objetivo comercial claro.',
-    category: 'AI',
-    readingTime: '5 min',
-    date: '2026-03-09',
-    body: [
-      { type: 'p', content: 'El contenido de marketing no busca informar sin más: busca generar una acción. Los prompts genéricos ("escribe un post sobre mi producto") suelen devolver texto correcto pero sin gancho comercial real.' },
-      { type: 'h2', content: 'Define el beneficio antes que la característica' },
-      { type: 'p', content: 'Un buen prompt de marketing pide primero el beneficio para el cliente y después la característica que lo hace posible, no al revés. "Explica cómo esta función ahorra tiempo" funciona mejor que "describe esta función".' },
-      { type: 'h2', content: 'Especifica la etapa del embudo' },
-      { type: 'p', content: 'El mismo producto se comunica distinto si el lector no te conoce todavía o si ya está comparando opciones. Indica en el prompt si el texto es para captar atención o para cerrar una decisión.' },
-      { type: 'h2', content: 'Pide variantes, no una única versión' },
-      { type: 'p', content: 'Pedir 3-4 variantes de un mismo titular o llamada a la acción y comparar cuál transmite mejor el mensaje suele dar mejor resultado que aceptar la primera propuesta.' },
-    ],
-  },
-  {
-    slug: 'notas-de-reunion-que-sirven',
-    title: 'Cómo tomar notas de reunión que de verdad sirvan',
-    excerpt:
-      'La mayoría de las notas de reunión no se vuelven a leer. Estas son las diferencias entre una nota útil y una que acaba olvidada.',
-    category: 'Automatización',
-    readingTime: '5 min',
-    date: '2026-03-16',
-    body: [
-      { type: 'p', content: 'Tomar notas durante una reunión no garantiza que sean útiles después. La mayoría se escriben para el momento, no para quien las va a necesitar una semana más tarde.' },
-      { type: 'h2', content: 'Separa información de acción' },
-      { type: 'p', content: 'Mezclar "se comentó que el proyecto va bien" con "hay que enviar el informe el viernes" en el mismo bloque de texto hace que las tareas se pierdan entre el contexto. Sepáralas desde el principio.' },
-      { type: 'h2', content: 'Anota quién es responsable, no solo qué hay que hacer' },
-      { type: 'p', content: 'Una tarea sin responsable asignado rara vez se completa. Si en la reunión no queda claro quién se encarga, es mejor preguntarlo ahí mismo que asumirlo después.' },
-      { type: 'h2', content: 'Revisa las notas en las primeras 24 horas' },
-      { type: 'p', content: 'Unas notas que no se revisan hasta la siguiente reunión pierden la mitad de su utilidad. Convertirlas en tareas concretas el mismo día multiplica las probabilidades de que se ejecuten.' },
-    ],
-  },
-  {
-    slug: 'traducir-sin-perder-el-tono',
-    title: 'Cómo traducir textos sin perder el tono original',
-    excerpt:
-      'Una traducción correcta a nivel gramatical puede sonar completamente distinta en tono al texto original. Así se evita ese desajuste.',
-    category: 'Escritura',
-    readingTime: '4 min',
-    date: '2026-03-23',
-    body: [
-      { type: 'p', content: 'Traducir bien no es solo cambiar de idioma: es mantener la misma intención. Un texto cercano en español puede volverse frío o excesivamente formal si se traduce palabra por palabra al inglés, y viceversa.' },
-      { type: 'h2', content: 'Traduce el sentido, no la estructura' },
-      { type: 'p', content: 'Las expresiones idiomáticas y las frases hechas casi nunca se traducen literalmente sin perder naturalidad. Es mejor reformular la idea en el idioma de destino que forzar una traducción exacta.' },
-      { type: 'h2', content: 'Revisa el registro después de traducir' },
-      { type: 'p', content: 'Una traducción automática tiende a un registro neutro. Si el original era informal o directo, revisa el resultado y ajusta el tono manualmente antes de usarlo.' },
-      { type: 'h2', content: 'Cuidado con los textos técnicos o legales' },
-      { type: 'p', content: 'En contenido con implicaciones legales o técnicas, un matiz mal traducido puede cambiar el significado. Estos textos siempre deberían pasar por una revisión humana especializada.' },
-    ],
-  },
-  {
-    slug: 'errores-comunes-usando-ia-en-el-trabajo',
-    title: 'Errores comunes al usar IA en el trabajo',
-    excerpt:
-      'No son errores técnicos, son errores de expectativas. Estos son los más frecuentes y cómo evitarlos en el día a día.',
-    category: 'AI',
-    readingTime: '6 min',
-    date: '2026-03-30',
-    body: [
-      { type: 'p', content: 'La mayoría de los problemas al usar IA en el trabajo no vienen de la herramienta, sino de cómo se usa. Estos son los errores más comunes que reducen su utilidad real.' },
-      { type: 'h2', content: 'Tratar el primer resultado como definitivo' },
-      { type: 'p', content: 'El primer resultado suele ser un buen borrador, no una versión final. Aceptarlo sin revisión es la causa más habitual de errores que llegan a un cliente o a un documento oficial.' },
-      { type: 'h2', content: 'No dar contexto suficiente' },
-      { type: 'p', content: 'Pedir "mejora este texto" sin indicar para quién es o qué objetivo tiene obliga a la IA a adivinar. Cuanto más contexto se aporta, menos vueltas hay que dar después.' },
-      { type: 'h2', content: 'Usarla para decisiones que requieren juicio propio' },
-      { type: 'p', content: 'La IA puede estructurar información y generar opciones, pero decisiones con impacto real —contractuales, financieras, de personal— necesitan criterio humano informado, no una respuesta generada.' },
-      { type: 'h2', content: 'No verificar datos concretos' },
-      { type: 'p', content: 'Cifras, fechas y nombres generados por IA deben verificarse siempre. Es el tipo de error más fácil de evitar y, a la vez, el más frecuente cuando se copia y pega sin revisar.' },
-    ],
-  },
-  {
-    slug: 'planificar-un-proyecto-personal',
-    title: 'Cómo planificar un proyecto personal de principio a fin',
-    excerpt:
-      'Los proyectos personales se abandonan casi siempre por falta de estructura, no por falta de motivación. Así se planifican para que lleguen a término.',
-    category: 'Productividad',
-    readingTime: '6 min',
-    date: '2026-04-06',
-    body: [
-      { type: 'p', content: 'La motivación inicial de un proyecto personal casi nunca es el problema. El problema aparece cuando no hay una estructura clara de qué hacer después del primer impulso.' },
-      { type: 'h2', content: 'Define el final antes que el principio' },
-      { type: 'p', content: 'Antes de planificar los primeros pasos, define cómo sabrás que el proyecto está terminado. Sin un criterio de "hecho" claro, el proyecto tiende a estirarse indefinidamente.' },
-      { type: 'h2', content: 'Divide por fases, no por días' },
-      { type: 'p', content: 'Planificar por fechas fijas genera frustración cuando la vida se cruza. Planificar por fases con un orden lógico permite avanzar a tu ritmo sin perder la estructura.' },
-      { type: 'h2', content: 'Identifica el primer paso que puedes hacer hoy' },
-      { type: 'p', content: 'Un proyecto grande se abandona en la fase de planificación si no hay una acción concreta y pequeña que se pueda hacer de inmediato. Empieza siempre por ahí.' },
-      { type: 'h2', content: 'Revisa el progreso, no solo el resultado final' },
-      { type: 'p', content: 'Los proyectos personales largos necesitan puntos de revisión intermedios. Sin ellos, es fácil no darse cuenta de que el proyecto se ha desviado hasta que ya es tarde para corregirlo.' },
-    ],
-  },
-  {
-    slug: 'escritura-persuasiva-landing-pages',
-    title: 'Técnicas de escritura persuasiva para páginas de aterrizaje',
-    excerpt:
-      'Una landing page no convierte por ser bonita, convierte por cómo está escrita. Estas son las técnicas que más influyen en la decisión del lector.',
-    category: 'Escritura',
-    readingTime: '5 min',
-    date: '2026-04-13',
-    body: [
-      { type: 'p', content: 'El diseño de una landing page importa, pero lo que decide si alguien actúa o se va es casi siempre el texto: qué promete, en qué orden lo cuenta y qué pide al final.' },
-      { type: 'h2', content: 'El titular debe responder "qué gano yo"' },
-      { type: 'p', content: 'Un titular centrado en el producto ("La nueva herramienta de IA para X") convierte peor que uno centrado en el resultado para el usuario ("Escribe el doble de rápido con IA").' },
-      { type: 'h2', content: 'Ordena el contenido por objeciones, no por características' },
-      { type: 'p', content: 'En vez de listar funciones en el orden que se te ocurren, ordénalas respondiendo a las dudas que tendría alguien antes de decidirse: ¿funciona para mi caso?, ¿es difícil de usar?, ¿qué pasa si no me convence?' },
-      { type: 'h2', content: 'Una sola llamada a la acción por página' },
-      { type: 'p', content: 'Varias llamadas a la acción distintas diluyen la decisión. Una landing page con un único objetivo claro convierte mejor que una que intenta conseguir varias cosas a la vez.' },
-    ],
-  },
-  {
-    slug: 'delegar-tareas-a-la-ia',
-    title: 'Cómo delegar tareas a la IA sin perder el control',
-    excerpt:
-      'Delegar en IA no significa desentenderse del resultado. Así se reparte el trabajo sin renunciar a la calidad ni a la responsabilidad final.',
-    category: 'Automatización',
-    readingTime: '5 min',
-    date: '2026-04-20',
-    body: [
-      { type: 'p', content: 'Delegar una tarea a una persona implica seguimiento y revisión. Delegarla en una IA no debería ser distinto, aunque muchas veces se trata como si lo fuera.' },
-      { type: 'h2', content: 'Delega el borrador, no la decisión final' },
-      { type: 'p', content: 'La IA es especialmente buena generando una primera versión de algo: un texto, un plan, una estructura. La decisión de qué queda y qué se descarta sigue siendo tuya.' },
-      { type: 'h2', content: 'Define criterios de calidad antes de delegar' },
-      { type: 'p', content: 'Sin un criterio claro de qué es un resultado aceptable, es difícil evaluar lo que devuelve la IA. Define de antemano qué necesitas para considerar la tarea bien hecha.' },
-      { type: 'h2', content: 'Revisa con más atención cuanto mayor sea el riesgo' },
-      { type: 'p', content: 'No todas las tareas necesitan el mismo nivel de revisión. Un borrador interno admite más margen de error que un documento que va a un cliente o a una autoridad.' },
-    ],
-  },
-  {
-    slug: 'estudiar-con-ia-sin-hacer-trampa',
-    title: 'Cómo estudiar con IA sin hacer trampa a tu propio aprendizaje',
-    excerpt:
-      'Usar IA para estudiar puede acelerar la comprensión o sustituirla por completo. La diferencia está en cómo se usa, no en si se usa.',
-    category: 'Estudio',
-    readingTime: '5 min',
-    date: '2026-04-27',
-    body: [
-      { type: 'p', content: 'La IA puede ser una herramienta de estudio muy potente o una forma sofisticada de evitar aprender. La diferencia depende de si la usas para entender o solo para obtener la respuesta.' },
-      { type: 'h2', content: 'Pide explicaciones, no solo respuestas' },
-      { type: 'p', content: 'Preguntar "por qué funciona así" en lugar de solo "cuál es la respuesta" convierte la IA en un tutor en vez de en un atajo. Ese pequeño cambio marca toda la diferencia.' },
-      { type: 'h2', content: 'Resume con tus propias palabras después' },
-      { type: 'p', content: 'Leer un resumen generado por IA no equivale a haberlo entendido. Reescribirlo con tus propias palabras, aunque sea brevemente, es lo que fija el conocimiento.' },
-      { type: 'h2', content: 'Usa la IA para practicar, no solo para consultar' },
-      { type: 'p', content: 'Pedir preguntas de repaso o ejercicios sobre un tema que acabas de estudiar es un uso mucho más efectivo que pedir directamente el resumen del tema.' },
-    ],
-  },
-  {
-    slug: 'mejores-asuntos-de-email',
-    title: 'Cómo escribir mejores asuntos de email',
-    excerpt:
-      'El asunto decide si un email se abre o se ignora. Estas son las reglas básicas para escribir asuntos que funcionan de verdad.',
-    category: 'Escritura',
-    readingTime: '4 min',
-    date: '2026-05-04',
-    body: [
-      { type: 'p', content: 'El asunto es lo único que ve el destinatario antes de decidir si abre el email. Aun así, es la parte que menos tiempo recibe al escribir.' },
-      { type: 'h2', content: 'Sé específico, no genérico' },
-      { type: 'p', content: '"Reunión" dice mucho menos que "Reunión proyecto X — confirmar jueves 10h". La especificidad reduce la fricción de decidir si merece la pena abrirlo ahora.' },
-      { type: 'h2', content: 'Indica la acción si la hay' },
-      { type: 'p', content: 'Si el email requiere una respuesta o decisión, dilo en el asunto: "Necesito tu confirmación antes del viernes" se prioriza distinto a un asunto neutro.' },
-      { type: 'h2', content: 'Evita el exceso de mayúsculas y signos' },
-      { type: 'p', content: 'Asuntos con "URGENTE" en mayúsculas o múltiples signos de exclamación generan desconfianza y, en muchos casos, acaban en spam.' },
-    ],
-  },
-  {
-    slug: 'resumir-vs-sintetizar',
-    title: 'La diferencia entre resumir y sintetizar información',
-    excerpt:
-      'Se usan como sinónimos, pero no lo son. Entender la diferencia cambia cómo procesas información larga o de varias fuentes.',
-    category: 'Estudio',
-    readingTime: '4 min',
-    date: '2026-05-11',
-    body: [
-      { type: 'p', content: 'Resumir y sintetizar se confunden a menudo, pero responden a necesidades distintas. Saber cuál necesitas en cada momento evita perder tiempo con el enfoque equivocado.' },
-      { type: 'h2', content: 'Resumir: menos texto, misma fuente' },
-      { type: 'p', content: 'Resumir toma un único documento y reduce su extensión conservando las ideas principales, en el mismo orden y sin añadir nada externo.' },
-      { type: 'h2', content: 'Sintetizar: combinar varias fuentes en una idea' },
-      { type: 'p', content: 'Sintetizar toma información de varios documentos o fuentes y la organiza en una estructura nueva, identificando coincidencias, contradicciones y patrones entre ellas.' },
-      { type: 'h2', content: 'Cuándo usar cada una' },
-      { type: 'p', content: 'Si necesitas entender rápido un único documento largo, resume. Si necesitas tomar una decisión basada en varias fuentes distintas, sintetiza: un resumen de cada una no sustituye esa visión conjunta.' },
-    ],
-  },
-  {
-    slug: 'rutina-semanal-de-productividad-realista',
-    title: 'Cómo crear una rutina semanal de productividad realista',
-    excerpt:
-      'Las rutinas perfectas en papel casi nunca sobreviven a la primera semana real. Así se diseña una que sí se sostiene en el tiempo.',
-    category: 'Productividad',
-    readingTime: '5 min',
-    date: '2026-05-18',
-    body: [
-      { type: 'p', content: 'La mayoría de las rutinas de productividad fallan no por falta de disciplina, sino porque se diseñan para una semana ideal que casi nunca ocurre.' },
-      { type: 'h2', content: 'Diseña para tu peor semana, no para la mejor' },
-      { type: 'p', content: 'Si tu rutina solo funciona cuando todo sale bien, no es una rutina: es un plan optimista. Diseña asumiendo imprevistos, no su ausencia.' },
-      { type: 'h2', content: 'Reserva menos tiempo del que crees necesitar' },
-      { type: 'p', content: 'Planificar el 100% del tiempo disponible garantiza que cualquier retraso descoloque todo lo demás. Deja margen real entre bloques de trabajo.' },
-      { type: 'h2', content: 'Revisa la rutina cada pocas semanas' },
-      { type: 'p', content: 'Una rutina que funcionaba hace dos meses puede no encajar con tu situación actual. Revísala periódicamente en lugar de forzarla indefinidamente.' },
-    ],
-  },
-  {
-    slug: 'preparar-entrevista-de-trabajo-con-ia',
-    title: 'Cómo preparar una entrevista de trabajo con ayuda de IA',
-    excerpt:
-      'La IA no puede hacer la entrevista por ti, pero puede ayudarte a prepararla mejor en mucho menos tiempo. Así se aprovecha bien.',
-    category: 'Negocio',
-    readingTime: '5 min',
-    date: '2026-05-25',
-    body: [
-      { type: 'p', content: 'Prepararse para una entrevista suele significar imaginar preguntas al azar. Usada bien, la IA puede convertir esa preparación en algo mucho más estructurado.' },
-      { type: 'h2', content: 'Pide preguntas específicas del puesto, no genéricas' },
-      { type: 'p', content: 'En lugar de buscar "preguntas de entrevista", pide preguntas probables para el puesto y sector concretos al que te presentas, a partir de la descripción de la oferta.' },
-      { type: 'h2', content: 'Practica respuestas estructuradas, no memorizadas' },
-      { type: 'p', content: 'Usa la IA para estructurar tus respuestas en torno a ejemplos concretos de tu experiencia, no para escribir un guion que suene artificial al recitarlo.' },
-      { type: 'h2', content: 'Prepara también tus propias preguntas' },
-      { type: 'p', content: 'Una entrevista es en dos direcciones. Pide ayuda para preparar preguntas relevantes sobre el puesto o el equipo: refuerza la impresión de interés genuino.' },
-    ],
-  },
+import comoEscribirMejoresPrompts from './articles/como-escribir-mejores-prompts.js'
+import promptsParaMarketing from './articles/prompts-para-marketing.js'
+import erroresComunes from './articles/errores-comunes-usando-ia-en-el-trabajo.js'
+import resumirDocumentos from './articles/resumir-documentos-con-ia.js'
+import organizarSemana from './articles/organizar-tu-semana-con-ia.js'
+import planificarProyecto from './articles/planificar-un-proyecto-personal.js'
+import automatizarTareas from './articles/automatizar-tareas-repetitivas.js'
+import notasDeReunion from './articles/notas-de-reunion-que-sirven.js'
+import emailRespuesta from './articles/email-que-consigue-respuesta.js'
+import cvFiltros from './articles/cv-filtros-automaticos.js'
+import entrevistaConIA from './articles/preparar-entrevista-de-trabajo-con-ia.js'
+import estudiarConIA from './articles/estudiar-con-ia-sin-hacer-trampa.js'
+import traducirTono from './articles/traducir-sin-perder-el-tono.js'
+import escrituraPersuasiva from './articles/escritura-persuasiva-landing-pages.js'
+
+const WORDS_PER_MINUTE = 200
+
+function countWords(body) {
+  return body
+    .map((b) => [b.content, ...(b.items || [])].filter(Boolean).join(' '))
+    .join(' ')
+    .split(/\s+/)
+    .filter(Boolean).length
+}
+
+const articles = [
+  comoEscribirMejoresPrompts,
+  promptsParaMarketing,
+  erroresComunes,
+  resumirDocumentos,
+  organizarSemana,
+  planificarProyecto,
+  automatizarTareas,
+  notasDeReunion,
+  emailRespuesta,
+  cvFiltros,
+  entrevistaConIA,
+  estudiarConIA,
+  traducirTono,
+  escrituraPersuasiva,
 ]
+
+export const resources = articles
+  .map((a) => {
+    const words = countWords(a.body)
+    return {
+      ...a,
+      words,
+      readingTime: `${Math.max(1, Math.round(words / WORDS_PER_MINUTE))} min`,
+    }
+  })
+  .sort((a, b) => (a.date < b.date ? 1 : -1))
 
 export function getResourceBySlug(slug) {
   return resources.find((r) => r.slug === slug)

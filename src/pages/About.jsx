@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
-import { Terminal, Target, Layers } from 'lucide-react'
+import { Terminal, Target, Layers, ShieldCheck } from 'lucide-react'
 
 export default function About() {
   return (
     <>
       <SEO
         title="Sobre QuickMotionAI"
-        description="QuickMotionAI es un sistema de herramientas gratuitas de IA y productividad para escribir, organizar y trabajar más rápido."
+        description="QuickMotionAI es un proyecto independiente de herramientas gratuitas y guías prácticas para escribir, organizar y trabajar más rápido con ayuda de IA."
         path="/about"
       />
       <section className="px-4 pt-32 pb-24 bg-terminal-black min-h-screen">
@@ -16,22 +17,36 @@ export default function About() {
 
           <div className="space-y-5 text-sm md:text-base text-white/60 leading-relaxed">
             <p>
-              QuickMotionAI nace de una idea simple: la mayoría de las tareas diarias de escritura, organización y
-              planificación se repiten una y otra vez, y gran parte de ese trabajo se puede acelerar con las
-              herramientas adecuadas.
+              QuickMotionAI es un proyecto independiente que reúne herramientas gratuitas y guías prácticas para tareas
+              que se repiten cada semana: escribir correos, resumir textos, ordenar notas de reuniones, planificar
+              proyectos o preparar un currículum. Nació de una idea sencilla: gran parte de ese trabajo se puede acelerar
+              si tienes la estructura adecuada, con o sin inteligencia artificial.
             </p>
             <p>
-              No buscamos ser otra plataforma que promete "revolucionar" tu forma de trabajar. Buscamos ser un
-              conjunto de herramientas concretas, gratuitas y directas al grano, que resuelvan tareas reales en
-              minutos en lugar de horas.
+              Las herramientas se ejecutan en tu navegador y no requieren registro. Cada una explica cómo funciona por
+              dentro y qué no hace, porque preferimos que sepas exactamente qué esperar a prometer más de lo que
+              ofrece. Las guías del blog incluyen ejemplos y plantillas que puedes copiar y adaptar.
+            </p>
+            <h2 className="font-mono-heading text-lg text-white pt-4">Qué encontrarás aquí</h2>
+            <ul className="list-disc pl-5 space-y-2 marker:text-matrix">
+              <li>Ocho herramientas gratuitas para escritura, estudio, productividad y negocio.</li>
+              <li>Guías en español con ejemplos reales, sin relleno ni cifras inventadas.</li>
+              <li>Explicaciones transparentes de los límites de cada herramienta y del uso de IA.</li>
+            </ul>
+            <p>
+              Si quieres saber cómo preparamos los contenidos, lee nuestra{' '}
+              <Link to="/editorial" className="text-matrix underline underline-offset-2">política editorial</Link>. Para
+              sugerencias, errores o propuestas de nuevas herramientas, escríbenos desde la{' '}
+              <Link to="/contact" className="text-matrix underline underline-offset-2">página de contacto</Link>.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
             {[
-              { icon: Terminal, title: 'Producto primero', desc: 'La experiencia de uso siempre por delante de cualquier otra consideración.' },
-              { icon: Target, title: 'Utilidad concreta', desc: 'Cada herramienta resuelve una tarea específica, sin funciones de relleno.' },
-              { icon: Layers, title: 'Crecimiento simple', desc: 'Empezamos con herramientas gratuitas y contenido útil, sin fricción de registro.' },
+              { icon: Terminal, title: 'Producto primero', desc: 'La experiencia de uso va por delante de cualquier otra consideración, incluida la publicidad.' },
+              { icon: Target, title: 'Utilidad concreta', desc: 'Cada herramienta y cada guía resuelve una tarea específica.' },
+              { icon: ShieldCheck, title: 'Privacidad', desc: 'Salvo el traductor, el texto que introduces se procesa en tu navegador.' },
+              { icon: Layers, title: 'Transparencia', desc: 'Explicamos cómo funciona cada herramienta y dónde se queda corta.' },
             ].map((item) => (
               <div key={item.title} className="rounded-sm border border-white/10 bg-terminal-gray/40 p-5">
                 <item.icon size={18} className="text-matrix mb-3" />

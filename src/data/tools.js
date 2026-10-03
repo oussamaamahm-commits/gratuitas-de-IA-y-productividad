@@ -2,15 +2,15 @@ export const tools = [
   {
     slug: 'ai-writer',
     name: 'AI Writer',
-    shortDescription: 'Mejora, reescribe y adapta cualquier texto.',
+    shortDescription: 'Limpia muletillas y ajusta el tono de tu texto.',
     description:
-      'Reestructura tus textos aplicando un tono y un objetivo concretos: profesional, directo, cercano o persuasivo, sin perder tu mensaje original.',
+      'Limpia tus textos eliminando muletillas y expresiones largas, corrige signos y mayúsculas, y ajusta el registro a un tono neutro, profesional o conciso.',
     icon: 'PenLine',
     category: 'writing',
     howItWorks: [
       { title: 'Pega tu texto', description: 'Introduce el borrador que quieres mejorar, por corto o largo que sea.' },
-      { title: 'Elige tono y objetivo', description: 'Selecciona cómo quieres que suene y para qué contexto se usará.' },
-      { title: 'Recibe la versión mejorada', description: 'QuickMotionAI reestructura frases, ajusta el tono y elimina relleno.' },
+      { title: 'Elige el tono', description: 'Selecciona un tono neutro, profesional o conciso.' },
+      { title: 'Recibe la versión limpia', description: 'La herramienta elimina relleno, simplifica expresiones y ordena la puntuación.' },
     ],
     useCases: [
       'Adaptar un email informal a un tono profesional.',
@@ -22,7 +22,7 @@ export const tools = [
       'Revisa siempre el resultado antes de usarlo: la IA propone, tú decides.',
     ],
     faq: [
-      { q: '¿Cambia el significado de mi texto?', a: 'No. Reestructura la forma, no el contenido. Debes revisar el resultado para confirmar que refleja lo que querías decir.' },
+      { q: '¿Cambia el significado de mi texto?', a: 'No. Solo limpia la forma con reglas fijas y no cambia tus ideas. Aun así, revisa el resultado para confirmar que refleja lo que querías decir.' },
       { q: '¿Funciona con textos largos?', a: 'Sí, aunque para documentos muy extensos es recomendable trabajar por secciones.' },
     ],
   },
@@ -191,7 +191,7 @@ export const tools = [
   {
     slug: 'text-translator',
     name: 'Text Translator',
-    shortDescription: 'Adapta textos a diferentes idiomas y tonos.',
+    shortDescription: 'Traduce textos cortos entre seis idiomas.',
     description:
       'Traduce tu texto a otro idioma manteniendo el sentido original, como base para adaptarlo después al tono que necesites.',
     icon: 'Languages',

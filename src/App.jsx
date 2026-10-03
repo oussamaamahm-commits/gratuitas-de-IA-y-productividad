@@ -18,6 +18,7 @@ import Terms from './pages/legal/Terms'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Changelog from './pages/Changelog'
+import Editorial from './pages/Editorial'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/changelog" element={<Changelog />} />
+          <Route path="/editorial" element={<Editorial />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

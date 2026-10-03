@@ -26,6 +26,7 @@ const COLUMNS = [
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
       { label: 'Changelog', href: '/changelog' },
+      { label: 'Editorial', href: '/editorial' },
     ],
   },
   {

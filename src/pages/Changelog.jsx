@@ -2,6 +2,16 @@ import SEO from '../components/SEO'
 
 const ENTRIES = [
   {
+    version: 'v1.1',
+    date: '3 de octubre de 2026',
+    changes: [
+      'Guías del blog reescritas y ampliadas, con ejemplos y plantillas reales.',
+      'Cada herramienta incluye ahora una explicación de cómo funciona y qué no hace.',
+      'AI Writer y Email Assistant corregidos y simplificados para que hagan exactamente lo que describen.',
+      'Nueva página de política editorial y de información sobre el proyecto.',
+    ],
+  },
+  {
     version: 'v1.0',
     date: '13 de septiembre de 2026',
     changes: [
